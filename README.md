@@ -1,4 +1,4 @@
-# How-to-Test-TVM-quantized-model-on-CUDA
+# How to Test TVM quantized model on CUDA
 
 git clone --recursive https://github.com/dmlc/tvm.git
 
