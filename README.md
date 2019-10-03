@@ -1,5 +1,7 @@
 # How to Test TVM quantized model on CUDA
 
+#https://github.com/vinx13/tvm-cuda-int8-benchmark
+
 git clone --recursive https://github.com/dmlc/tvm.git
 
 vi .bashrc #Add the following two lines, and then reboot; NOTE! Set [YOUR_HOME_DIRECTORY] correctly!
