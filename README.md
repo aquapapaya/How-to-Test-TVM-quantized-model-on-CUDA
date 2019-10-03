@@ -8,6 +8,7 @@ vi .bashrc #Add the following two lines, and then reboot; NOTE! Set [YOUR_HOME_D
 
 #export PYTHONPATH=$TVM_HOME/python:$TVM_HOME/topi/python:$TVM_HOME/nnvm/python:${PYTHONPATH}
 
+#reboot
 
 cd tvm
 
@@ -26,3 +27,13 @@ vi config.cmake #enable CUDA and LLVM
 cmake ..
 
 make -j4
+
+cd ~
+
+git clone --recursive https://github.com/vinx13/tvm-cuda-int8-benchmark.git
+
+cd tvm-cuda-int8-benchmark
+
+pip3 install mxnet-cu101mkl
+
+python3 run_tvm.py --log_file logs/history_best_1080.log
